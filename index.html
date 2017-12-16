@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<title>jQuery Test</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>
+	<body>
+		<div class="container">
+			<h2 class="text-center edit">Form Maintenance</h2>
+			<form method="get" action="#" id="main-form">
+				<table class="table table-hover table-bordered" id="table1">
+					<thead>
+						<tr>
+							<th>Items</th>
+							<th>Rate</th>
+							<th>Quantity</th>
+							<th>Total</th>
+							<th>Remove</th>
+						</tr>
+					</thead>
+					<tbody class="copy-row1">
+						<tr class="copy-row">
+							<td><input type="text" name="itemname" id="itemname0"></td>
+							<td><input type="number" name="itemrate" id="itemrate0"></td>
+							<td><input type="number" name="itemquantity" id="itemquantity0"></td>
+							<td><input type="number" name="total" id="itemtotal0" readonly></td>
+							<td><button type="button" class="rem" id="rem">&times;</button></td>
+						</tr>
+					</tbody>
+					<tr>
+						<td></td>
+						<td><button type="button" id="add-item" class="btn btn-primary">Add Item</button></td>
+						<td>
+							<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modal-table" id="totalbtn">Total</button>
+						</td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+			</form><!-- main-form ends here -->
+
+
+			<div class="modal fade" id="modal-table" tab-index="-1" role="dialog" aria-labelledby="modalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+							<h2 class="modal-title" id="modalLabel">Click here <span class="glyphicon glyphicon-print"></span> to print the form.</h2>
+						</div><!-- .modal-header ends here. -->
+						<div class="modal-body">
+							<h5 class="text-center">Hello. Some text here.</h5>
+							<!-- <table class="table table-striped" id="tblGrid">
+								<thead>
+									<th>Item name</th>
+									<th>Item Rate</th>
+									<th>Item Quantity</th>
+									<th class="text-right">Total</th>
+								</thead>
+								<tbody class="modal-table-body">
+									
+								</tbody>
+								<tbody class="modal-table-total">
+									<tr>
+										<td class="append-total"></td>
+									</tr>
+								</tbody>
+							</table> -->
+						</div><!-- .modal-body ends here. -->
+					</div><!-- .modal-content ends here. -->
+				</div><!-- .modal-dialog ends here. -->
+			</div><!-- .modal ends here. -->
+		</div>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/custom.js"></script>
+	</body>
+</html>
